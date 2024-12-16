@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Form Practice</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form acion="/register">
+        <div>
+            <label for="first_name_form">First Name</label>
+            <input type="text" id="first_name_form" name="first_name_form" minlength="2" maxlength="15"
+                placeholder="2 - 15 characters" required>
+            <label for="last_name_form">Last Name</label>
+            <input type="text" id="last_name_form" name="last_name_form" minlength="2" maxlength="15"
+                placeholder="2 - 15 characters" required>
+        </div>
+        <h3>Select a Race:</h3>
+        <input type="radio" id="race_radio_fun_form" name="race_selection_form" checked>
+        <label for="race_radio_fun_form">Fun Run 5k</label><br>
+        <input type="radio" id="race_radio_half_form" name="race_selection_form">
+        <label for="race_radio_half_form">Half Marathon</label><br>
+        <input type="radio" id="race_radio_full_form" name="race_selection_form">
+        <label for="race_radio_full_form">Full Marathon</label><br><br>
+        <div>
+            <label for="email_form">Email</label>
+            <input type="email" id="email_form" name="email_form" placeholder="e.g: john@mail.com" required>
+            <label for="password_form">Password</label>
+            <input type="password" id="password_form" name="password_form" minlength="8" maxlength="32"
+                placeholder="8 - 32 length" required>
+            <p>
+                <label for="age_group_form">Age Group</label>
+                <select>
+                    <option>under 18</option>
+                    <option>18-21</option>
+                    <option>22-65</option>
+                    <option>over 65</option>
+                </select>
+            </p>
+        </div>
+        <button>Register!</button>
+    </form>
+</body>
+
+</html>
